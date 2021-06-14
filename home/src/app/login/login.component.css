@@ -11,16 +11,15 @@
     margin: 2rem auto;
 }
 
-.logo-box  a {
-   letter-spacing: 2px;
-   text-transform: uppercase;
-   color: #03ae9e;
+.logo-box a {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #03ae9e;
 }
 
 .login-form-container {
     width: 40%;
     margin: 0 auto;
-    
 }
 
 .login-form-heading {
@@ -34,10 +33,10 @@
 }
 
 .login-form input {
-      width: 100%;
-      padding: 14px 20px;
-      border: 1px solid #000;
-      border-radius: 8px;
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid #000;
+    border-radius: 8px;
 }
 
 ::placeholder {
@@ -56,8 +55,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-  }
-  
+}
+
 .forgot-password-and-signup-links-div a {
     color: #686868;
 }
@@ -86,58 +85,52 @@
     align-items: center;
 }
 
-.third-party-signin-item  img {
-  width: 20%;
-  object-fit: contain;
-  /* transform: scale(.3); */
-  height: 60%;
+.third-party-signin-item img {
+    width: 20%;
+    object-fit: contain;
+    /* transform: scale(.3); */
+    height: 60%;
 }
 
-.third-party-signin-item  p {
-  width: 60%;
-  height: 20%;
-  font-weight: 500;
+.third-party-signin-item p {
+    width: 60%;
+    height: 20%;
+    font-weight: 500;
 }
 
-.third-party-signin-item  p a {
-  color: #000;
+.third-party-signin-item p a {
+    color: #000;
 }
 
-.signup-page-link  {
-  display: none;
+.signup-page-link {
+    display: none;
 }
 
 @media only screen and (min-width: 280px) and (max-width: 900px) {
-.login-form-container {
-    width: 90%;
-}
-
-.third-party-signin-options-container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.third-party-signin-options-container .row {
-    flex-direction: column;
-    margin-bottom: 0;
-    position: relative;
-    left: .2rem;
-}
-
-.third-party-signin-options-container .row .third-party-signin-item {
-    width: 100%;
-  margin-bottom: 1rem;
-}
-
-
-.third-party-signin-item  p {
-  width: 70%;
-  justify-self: flex-start;
-}
-.signup-page-link {
-  display: block;
-  width: 90%;
-  margin: 0 auto;
-}
-
+    .login-form-container {
+        width: 90%;
+    }
+    .third-party-signin-options-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .third-party-signin-options-container .row {
+        flex-direction: column;
+        margin-bottom: 0;
+        position: relative;
+        left: .2rem;
+    }
+    .third-party-signin-options-container .row .third-party-signin-item {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .third-party-signin-item p {
+        width: 70%;
+        justify-self: flex-start;
+    }
+    .signup-page-link {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
 }
