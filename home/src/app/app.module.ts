@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RecaptchaModule, RecaptchaFormsModule } from "ng-recaptcha";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,7 +25,8 @@ import { TesteComponent } from './teste/teste.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RecaptchaModule, RecaptchaFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

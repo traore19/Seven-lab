@@ -1,6 +1,6 @@
 .login-container {
     width: 100%;
-    background-color: #fff;
+    background-color: white;
     font-family: 'Mukta', sans-serif;
     height: auto;
     max-height: 100vh;
@@ -62,10 +62,11 @@
 }
 
 .third-party-signin-options-container {
-    width: 45%;
+    width: 40%;
     margin: 0 auto;
     position: relative;
-    left: 1rem;
+    /* left: 1rem; */
+    align-items: center;
 }
 
 .third-party-signin-options-container .row {
@@ -96,6 +97,7 @@
     width: 60%;
     height: 20%;
     font-weight: 500;
+    margin-right: 10%;
 }
 
 .third-party-signin-item p a {

@@ -1,0 +1,19 @@
+.ico {
+    width: 30px;
+    color: black;
+    font-size: 20px;
+}
+
+.loginButton {
+    border: 2px solid rgb(65, 195, 158);
+}
+
+
+/* .ico:hover {
+    color: white;
+} */
+
+.loginButton:hover {
+    background-color: rgb(65, 195, 158);
+    color: white;
+}
