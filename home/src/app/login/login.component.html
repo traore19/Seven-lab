@@ -6,13 +6,13 @@
         <p class="login-form-heading">Login to your account</p>
         <form action="" class="login-form">
             <div class="form-group">
-                <input class="mt-5 pb-5" type="email" placeholder="Type your email" />
+                <input class="mt-5 pb-5" type="text" [(ngModel)]="userObj.username" placeholder="Type your username" name="username" />
             </div>
             <div class="form-group">
-                <input class="mt-5 pb-5" type="password" placeholder="Type your password" />
+                <input class="mt-5 pb-5" type="password" [(ngModel)]="userObj.password" placeholder="Type your password" name="password" />
             </div>
             <div class="form-group">
-                <input type="submit" class="login-form-btn mt-5 pb-5" value="Login" />
+                <input type="submit" (click)="verifyLoginUser()" class="login-form-btn mt-5 pb-5" value="Login" />
             </div>
             <div class="forgot-password-and-signup-links-div mt-5">
                 <p><a href="#">Forgot password?</a></p>

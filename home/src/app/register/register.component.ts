@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthenticationService } from '../services/authentication.service';
+  
 
-
-var grecaptcha: any;
+// var grecaptcha: any;
 
 @Component({
   selector: 'app-register',
@@ -11,10 +13,16 @@ var grecaptcha: any;
 export class RegisterComponent implements OnInit {
   
 
-
-  constructor() { }
+  constructor(private authenticationService:AuthenticationService,
+    public router: Router) { }
 
   ngOnInit(): void {
   }
+  @Input() userObj = { username: '', password: ''}
 
+  addUser(){
+    this.authenticationService.createUser(this.userObj).subscribe(data =>{
+      this.router.navigate(['/login'])
+    });
+  }
 }
